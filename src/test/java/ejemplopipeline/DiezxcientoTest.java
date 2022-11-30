@@ -20,7 +20,14 @@ public class DiezxcientoTest {
 
 	@Test
 	public void testSaldoAhorro() throws Exception {
-
+		assertEquals(diezxciento.ahorro - diezxciento.diezxciento(), diezxciento.saldoAhorro());
 	}
+
+
+	@Test
+	public void testSaldoAhorroFailed() throws Exception {
+		assertEquals(diezxciento.ahorro + diezxciento.diezxciento(), diezxciento.saldoAhorro());
+	}
+
 
 }
